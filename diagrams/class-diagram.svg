@@ -1,163 +1,57 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900">
-  <!-- Title -->
-  <text x="700" y="30" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#1f2937">
-    Healthcare AI/ML System - Class Diagram
-  </text>
+  <rect width="1400" height="900" fill="#f8fafc" rx="15"/>
+  <text x="700" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#1e293b">Healthcare AI/ML System - Class Diagram</text>
   
-  <!-- Patient Class -->
-  <g>
-    <rect x="50" y="80" width="250" height="280" fill="#e0f2fe" stroke="#0891b2" stroke-width="2"/>
-    <rect x="50" y="80" width="250" height="40" fill="#0891b2"/>
-    <text x="175" y="105" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Patient</text>
-    
-    <!-- Attributes -->
-    <line x1="50" y1="120" x2="300" y2="120" stroke="#0891b2" stroke-width="1"/>
-    <text x="60" y="140" font-family="Courier New, monospace" font-size="11" fill="#0f172a">- patientId: int</text>
-    <text x="60" y="155" font-family="Courier New, monospace" font-size="11" fill="#0f172a">- name: string</text>
-    <text x="60" y="170" font-family="Courier New, monospace" font-size="11" fill="#0f172a">- age: int</text>
-    <text x="60" y="185" font-family="Courier New, monospace" font-size="11" fill="#0f172a">- bmi: float</text>
-    <text x="60" y="200" font-family="Courier New, monospace" font-size="11" fill="#0f172a">- bloodPressure: int</text>
-    <text x="60" y="215" font-family="Courier New, monospace" font-size="11" fill="#0f172a">- glucose: int</text>
-    <text x="60" y="230" font-family="Courier New, monospace" font-size="11" fill="#0f172a">- diseaseRisk: string</text>
-    <text x="60" y="245" font-family="Courier New, monospace" font-size="11" fill="#0f172a">- city: string</text>
-    
-    <!-- Methods -->
-    <line x1="50" y1="255" x2="300" y2="255" stroke="#0891b2" stroke-width="1"/>
-    <text x="60" y="275" font-family="Courier New, monospace" font-size="11" fill="#0f172a">+ getPatientData()</text>
-    <text x="60" y="290" font-family="Courier New, monospace" font-size="11" fill="#0f172a">+ updatePatientData()</text>
-    <text x="60" y="305" font-family="Courier New, monospace" font-size="11" fill="#0f172a">+ calculateRiskScore()</text>
-    <text x="60" y="320" font-family="Courier New, monospace" font-size="11" fill="#0f172a">+ validate()</text>
-    <text x="60" y="335" font-family="Courier New, monospace" font-size="11" fill="#0f172a">+ toJSON()</text>
+  <!-- Class: Patient -->
+  <g transform="translate(100, 100)">
+    <rect width="250" height="300" fill="white" stroke="#0ea5e9" stroke-width="2" rx="5"/>
+    <rect width="250" height="50" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2" rx="5"/>
+    <text x="125" y="32" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#0369a1">Patient</text>
+    <text x="15" y="80" font-family="Courier New, monospace" font-size="13" fill="#334155">- id: int</text>
+    <text x="15" y="100" font-family="Courier New, monospace" font-size="13" fill="#334155">- name: string</text>
+    <text x="15" y="120" font-family="Courier New, monospace" font-size="13" fill="#334155">- age: int</text>
+    <text x="15" y="140" font-family="Courier New, monospace" font-size="13" fill="#334155">- bmi: float</text>
+    <text x="15" y="160" font-family="Courier New, monospace" font-size="13" fill="#334155">- riskScore: float</text>
+    <line x1="0" y1="180" x2="250" y2="180" stroke="#bae6fd"/>
+    <text x="15" y="210" font-family="Courier New, monospace" font-size="13" fill="#334155">+ validateData()</text>
+    <text x="15" y="230" font-family="Courier New, monospace" font-size="13" fill="#334155">+ predictRisk()</text>
   </g>
-  
-  <!-- DataProcessor Class -->
-  <g>
-    <rect x="400" y="80" width="280" height="260" fill="#ddd6fe" stroke="#7c3aed" stroke-width="2"/>
-    <rect x="400" y="80" width="280" height="40" fill="#7c3aed"/>
-    <text x="540" y="105" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">DataProcessor</text>
-    
-    <!-- Attributes -->
-    <line x1="400" y1="120" x2="680" y2="120" stroke="#7c3aed" stroke-width="1"/>
-    <text x="410" y="140" font-family="Courier New, monospace" font-size="11" fill="#0f172a">- dataset: Array&lt;Patient&gt;</text>
-    <text x="410" y="155" font-family="Courier New, monospace" font-size="11" fill="#0f172a">- cleanedData: Array&lt;Patient&gt;</text>
-    <text x="410" y="170" font-family="Courier New, monospace" font-size="11" fill="#0f172a">- missingValueCount: int</text>
-    <text x="410" y="185" font-family="Courier New, monospace" font-size="11" fill="#0f172a">- validationRules: object</text>
-    
-    <!-- Methods -->
-    <line x1="400" y1="195" x2="680" y2="195" stroke="#7c3aed" stroke-width="1"/>
-    <text x="410" y="215" font-family="Courier New, monospace" font-size="11" fill="#0f172a">+ loadData()</text>
-    <text x="410" y="230" font-family="Courier New, monospace" font-size="11" fill="#0f172a">+ cleanData()</text>
-    <text x="410" y="245" font-family="Courier New, monospace" font-size="11" fill="#0f172a">+ handleMissingValues()</text>
-    <text x="410" y="260" font-family="Courier New, monospace" font-size="11" fill="#0f172a">+ validateData()</text>
-    <text x="410" y="275" font-family="Courier New, monospace" font-size="11" fill="#0f172a">+ removeOutliers()</text>
-    <text x="410" y="290" font-family="Courier New, monospace" font-size="11" fill="#0f172a">+ exportCleanData()</text>
-    <text x="410" y="305" font-family="Courier New, monospace" font-size="11" fill="#0f172a">+ getStatistics()</text>
+
+  <!-- Class: DataProcessor -->
+  <g transform="translate(450, 100)">
+    <rect width="300" height="250" fill="white" stroke="#6366f1" stroke-width="2" rx="5"/>
+    <rect width="300" height="50" fill="#eef2ff" stroke="#6366f1" stroke-width="2" rx="5"/>
+    <text x="150" y="32" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#4338ca">DataProcessor</text>
+    <text x="15" y="80" font-family="Courier New, monospace" font-size="13" fill="#334155">- dataset: List&lt;Patient&gt;</text>
+    <line x1="0" y1="130" x2="300" y2="130" stroke="#e0e7ff"/>
+    <text x="15" y="160" font-family="Courier New, monospace" font-size="13" fill="#334155">+ cleanData()</text>
+    <text x="15" y="180" font-family="Courier New, monospace" font-size="13" fill="#334155">+ handleMissingValues()</text>
+    <text x="15" y="200" font-family="Courier New, monospace" font-size="13" fill="#334155">+ filterOutliers()</text>
   </g>
-  
-  <!-- RiskAnalyzer Class -->
-  <g>
-    <rect x="780" y="80" width="280" height="240" fill="#fecaca" stroke="#dc2626" stroke-width="2"/>
-    <rect x="780" y="80" width="280" height="40" fill="#dc2626"/>
-    <text x="920" y="105" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">RiskAnalyzer</text>
-    
-    <!-- Attributes -->
-    <line x1="780" y1="120" x2="1060" y2="120" stroke="#dc2626" stroke-width="1"/>
-    <text x="790" y="140" font-family="Courier New, monospace" font-size="11" fill="#0f172a">- mlModel: object</text>
-    <text x="790" y="155" font-family="Courier New, monospace" font-size="11" fill="#0f172a">- accuracy: float</text>
-    <text x="790" y="170" font-family="Courier New, monospace" font-size="11" fill="#0f172a">- predictions: array</text>
-    <text x="790" y="185" font-family="Courier New, monospace" font-size="11" fill="#0f172a">- thresholds: object</text>
-    
-    <!-- Methods -->
-    <line x1="780" y1="195" x2="1060" y2="195" stroke="#dc2626" stroke-width="1"/>
-    <text x="790" y="215" font-family="Courier New, monospace" font-size="11" fill="#0f172a">+ trainModel()</text>
-    <text x="790" y="230" font-family="Courier New, monospace" font-size="11" fill="#0f172a">+ predictRisk(patient)</text>
-    <text x="790" y="245" font-family="Courier New, monospace" font-size="11" fill="#0f172a">+ identifyHighRisk()</text>
-    <text x="790" y="260" font-family="Courier New, monospace" font-size="11" fill="#0f172a">+ calculateConfidence()</text>
-    <text x="790" y="275" font-family="Courier New, monospace" font-size="11" fill="#0f172a">+ generateReport()</text>
-    <text x="790" y="290" font-family="Courier New, monospace" font-size="11" fill="#0f172a">+ getModelMetrics()</text>
+
+  <!-- Class: RiskAnalyzer -->
+  <g transform="translate(850, 100)">
+    <rect width="300" height="250" fill="white" stroke="#10b981" stroke-width="2" rx="5"/>
+    <rect width="300" height="50" fill="#ecfdf5" stroke="#10b981" stroke-width="2" rx="5"/>
+    <text x="150" y="32" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#047857">RiskAnalyzer</text>
+    <text x="15" y="80" font-family="Courier New, monospace" font-size="13" fill="#334155">- model: RFClassifier</text>
+    <text x="15" y="100" font-family="Courier New, monospace" font-size="13" fill="#334155">- accuracy: float = 92.86</text>
+    <line x1="0" y1="130" x2="300" y2="130" stroke="#d1fae5"/>
+    <text x="15" y="160" font-family="Courier New, monospace" font-size="13" fill="#334155">+ train(data)</text>
+    <text x="15" y="180" font-family="Courier New, monospace" font-size="13" fill="#334155">+ predict(patient)</text>
+    <text x="15" y="200" font-family="Courier New, monospace" font-size="13" fill="#334155">+ getMetrics()</text>
   </g>
-  
-  <!-- Dashboard Class -->
-  <g>
-    <rect x="120" y="450" width="280" height="240" fill="#d1fae5" stroke="#10b981" stroke-width="2"/>
-    <rect x="120" y="450" width="280" height="40" fill="#10b981"/>
-    <text x="260" y="475" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Dashboard</text>
-    
-    <!-- Attributes -->
-    <line x1="120" y1="490" x2="400" y2="490" stroke="#10b981" stroke-width="1"/>
-    <text x="130" y="510" font-family="Courier New, monospace" font-size="11" fill="#0f172a">- currentTab: string</text>
-    <text x="130" y="525" font-family="Courier New, monospace" font-size="11" fill="#0f172a">- charts: Array&lt;Chart&gt;</text>
-    <text x="130" y="540" font-family="Courier New, monospace" font-size="11" fill="#0f172a">- kpiData: object</text>
-    <text x="130" y="555" font-family="Courier New, monospace" font-size="11" fill="#0f172a">- activeFilters: array</text>
-    
-    <!-- Methods -->
-    <line x1="120" y1="565" x2="400" y2="565" stroke="#10b981" stroke-width="1"/>
-    <text x="130" y="585" font-family="Courier New, monospace" font-size="11" fill="#0f172a">+ renderDashboard()</text>
-    <text x="130" y="600" font-family="Courier New, monospace" font-size="11" fill="#0f172a">+ switchTab(tab)</text>
-    <text x="130" y="615" font-family="Courier New, monospace" font-size="11" fill="#0f172a">+ updateCharts()</text>
-    <text x="130" y="630" font-family="Courier New, monospace" font-size="11" fill="#0f172a">+ displayKPIs()</text>
-    <text x="130" y="645" font-family="Courier New, monospace" font-size="11" fill="#0f172a">+ applyFilters()</text>
-    <text x="130" y="660" font-family="Courier New, monospace" font-size="11" fill="#0f172a">+ refreshData()</text>
-  </g>
-  
-  <!-- KPICalculator Class -->
-  <g>
-    <rect x="520" y="450" width="280" height="240" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
-    <rect x="520" y="450" width="280" height="40" fill="#f59e0b"/>
-    <text x="660" y="475" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">KPICalculator</text>
-    
-    <!-- Attributes -->
-    <line x1="520" y1="490" x2="800" y2="490" stroke="#f59e0b" stroke-width="1"/>
-    <text x="530" y="510" font-family="Courier New, monospace" font-size="11" fill="#0f172a">- avgBMI: float</text>
-    <text x="530" y="525" font-family="Courier New, monospace" font-size="11" fill="#0f172a">- avgGlucose: float</text>
-    <text x="530" y="540" font-family="Courier New, monospace" font-size="11" fill="#0f172a">- highRiskCount: int</text>
-    <text x="530" y="555" font-family="Courier New, monospace" font-size="11" fill="#0f172a">- avgHealthScore: float</text>
-    
-    <!-- Methods -->
-    <line x1="520" y1="565" x2="800" y2="565" stroke="#f59e0b" stroke-width="1"/>
-    <text x="530" y="585" font-family="Courier New, monospace" font-size="11" fill="#0f172a">+ calculateAvgBMI()</text>
-    <text x="530" y="600" font-family="Courier New, monospace" font-size="11" fill="#0f172a">+ calculateAvgGlucose()</text>
-    <text x="530" y="615" font-family="Courier New, monospace" font-size="11" fill="#0f172a">+ countHighRiskPatients()</text>
-    <text x="530" y="630" font-family="Courier New, monospace" font-size="11" fill="#0f172a">+ getAverageHealthScore()</text>
-    <text x="530" y="645" font-family="Courier New, monospace" font-size="11" fill="#0f172a">+ generateKPIReport()</text>
-    <text x="530" y="660" font-family="Courier New, monospace" font-size="11" fill="#0f172a">+ compareMetrics()</text>
-  </g>
-  
+
   <!-- Relationships -->
-  <!-- Dashboard uses DataProcessor -->
-  <line x1="260" y1="450" x2="540" y2="340" stroke="#374151" stroke-width="2" marker-end="url(#arrowhead)"/>
-  <text x="350" y="380" font-family="Arial, sans-serif" font-size="12" fill="#374151">uses</text>
-  
-  <!-- Dashboard uses RiskAnalyzer -->
-  <line x1="400" y1="560" x2="780" y2="240" stroke="#374151" stroke-width="2" marker-end="url(#arrowhead)"/>
-  <text x="550" y="380" font-family="Arial, sans-serif" font-size="12" fill="#374151">uses</text>
-  
-  <!-- Dashboard uses KPICalculator -->
-  <line x1="400" y1="570" x2="520" y2="570" stroke="#374151" stroke-width="2" marker-end="url(#arrowhead)"/>
-  <text x="440" y="560" font-family="Arial, sans-serif" font-size="12" fill="#374151">uses</text>
-  
-  <!-- RiskAnalyzer processes Patient -->
-  <line x1="780" y1="150" x2="300" y2="150" stroke="#374151" stroke-width="2" marker-end="url(#arrowhead)"/>
-  <text x="500" y="140" font-family="Arial, sans-serif" font-size="12" fill="#374151">processes</text>
-  
-  <!-- DataProcessor validates Patient -->
-  <line x1="540" y1="340" x2="175" y2="360" stroke="#374151" stroke-width="2" marker-end="url(#arrowhead)"/>
-  <text x="320" y="340" font-family="Arial, sans-serif" font-size="12" fill="#374151">validates</text>
-  
-  <!-- Arrow marker -->
+  <g stroke="#94a3b8" stroke-width="2">
+    <!-- Patient and Processor -->
+    <line x1="350" y1="200" x2="450" y2="200" marker-end="url(#diamond)"/>
+    <text x="390" y="190" font-family="Arial, sans-serif" font-size="12" fill="#64748b">1..*</text>
+  </g>
+
   <defs>
-    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-      <polygon points="0 0, 10 3, 0 6" fill="#374151" />
+    <marker id="diamond" markerWidth="20" markerHeight="20" refX="10" refY="10" orient="auto">
+      <path d="M0,10 L10,5 L20,10 L10,15 Z" fill="white" stroke="#94a3b8" stroke-width="1.5"/>
     </marker>
   </defs>
-  
-  <!-- Legend -->
-  <rect x="900" y="500" width="420" height="180" fill="#f9fafb" stroke="#9ca3af" stroke-width="2"/>
-  <text x="1110" y="530" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1f2937">Class Diagram Legend</text>
-  <text x="910" y="555" font-family="Arial, sans-serif" font-size="12" fill="#374151">• Patient: Core data model for healthcare records</text>
-  <text x="910" y="575" font-family="Arial, sans-serif" font-size="12" fill="#374151">• DataProcessor: Handles data cleaning & validation</text>
-  <text x="910" y="595" font-family="Arial, sans-serif" font-size="12" fill="#374151">• RiskAnalyzer: ML model for risk prediction</text>
-  <text x="910" y="615" font-family="Arial, sans-serif" font-size="12" fill="#374151">• Dashboard: UI controller for visualization</text>
-  <text x="910" y="635" font-family="Arial, sans-serif" font-size="12" fill="#374151">• KPICalculator: Healthcare metrics computation</text>
-  <text x="910" y="665" font-family="Arial, sans-serif" font-size="11" font-style="italic" fill="#6b7280">Arrows indicate dependencies and relationships</text>
 </svg>

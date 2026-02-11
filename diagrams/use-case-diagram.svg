@@ -1,90 +1,63 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
-  <!-- Title -->
-  <text x="600" y="30" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#1f2937">
-    Healthcare AI/ML System - Use Case Diagram
-  </text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600">
+  <rect width="1000" height="600" fill="#f8fafc" rx="15"/>
+  <text x="500" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#1e293b">Healthcare AI/ML System - Use Case Diagram</text>
   
-  <!-- System Boundary -->
-  <rect x="300" y="80" width="600" height="650" fill="none" stroke="#4b5563" stroke-width="2" stroke-dasharray="5,5"/>
-  <text x="600" y="105" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#374151">
-    HealthAI Pro System
-  </text>
-  
-  <!-- Healthcare Professional Actor -->
-  <circle cx="150" cy="200" r="25" fill="none" stroke="#14b8a6" stroke-width="2"/>
-  <line x1="150" y1="225" x2="150" y2="290" stroke="#14b8a6" stroke-width="2"/>
-  <line x1="150" y1="250" x2="120" y2="280" stroke="#14b8a6" stroke-width="2"/>
-  <line x1="150" y1="250" x2="180" y2="280" stroke="#14b8a6" stroke-width="2"/>
-  <line x1="150" y1="290" x2="120" y2="330" stroke="#14b8a6" stroke-width="2"/>
-  <line x1="150" y1="290" x2="180" y2="330" stroke="#14b8a6" stroke-width="2"/>
-  <text x="150" y="360" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#14b8a6">
-    Healthcare Professional
-  </text>
-  
-  <!-- System Admin Actor -->
-  <circle cx="1050" cy="200" r="25" fill="none" stroke="#f59e0b" stroke-width="2"/>
-  <line x1="1050" y1="225" x2="1050" y2="290" stroke="#f59e0b" stroke-width="2"/>
-  <line x1="1050" y1="250" x2="1020" y2="280" stroke="#f59e0b" stroke-width="2"/>
-  <line x1="1050" y1="250" x2="1080" y2="280" stroke="#f59e0b" stroke-width="2"/>
-  <line x1="1050" y1="290" x2="1020" y2="330" stroke="#f59e0b" stroke-width="2"/>
-  <line x1="1050" y1="290" x2="1080" y2="330" stroke="#f59e0b" stroke-width="2"/>
-  <text x="1050" y="360" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#f59e0b">
-    System Admin
-  </text>
-  
-  <!-- Use Cases -->
-  <!-- Row 1 -->
-  <ellipse cx="450" cy="180" rx="120" ry="40" fill="#e0f2fe" stroke="#0891b2" stroke-width="2"/>
-  <text x="450" y="188" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#0f172a">View Dashboard</text>
-  
-  <ellipse cx="750" cy="180" rx="120" ry="40" fill="#e0f2fe" stroke="#0891b2" stroke-width="2"/>
-  <text x="750" y="188" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#0f172a">Analyze Patient Data</text>
-  
-  <!-- Row 2 -->
-  <ellipse cx="450" cy="280" rx="120" ry="40" fill="#e0f2fe" stroke="#0891b2" stroke-width="2"/>
-  <text x="450" y="288" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#0f172a">Predict Health Risks</text>
-  
-  <ellipse cx="750" cy="280" rx="120" ry="40" fill="#e0f2fe" stroke="#0891b2" stroke-width="2"/>
-  <text x="750" y="280" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#0f172a">View High-Risk</text>
-  <text x="750" y="295" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#0f172a">Patients</text>
-  
-  <!-- Row 3 -->
-  <ellipse cx="450" cy="380" rx="120" ry="40" fill="#e0f2fe" stroke="#0891b2" stroke-width="2"/>
-  <text x="450" y="388" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#0f172a">Monitor KPIs</text>
-  
-  <ellipse cx="750" cy="380" rx="120" ry="40" fill="#e0f2fe" stroke="#0891b2" stroke-width="2"/>
-  <text x="750" y="388" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#0f172a">Generate Reports</text>
-  
-  <!-- Row 4 - Admin Use Cases -->
-  <ellipse cx="450" cy="520" rx="130" ry="40" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
-  <text x="450" y="520" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#0f172a">Manage Patient</text>
-  <text x="450" y="535" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#0f172a">Records</text>
-  
-  <ellipse cx="750" cy="520" rx="130" ry="40" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
-  <text x="750" y="520" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#0f172a">Configure System</text>
-  <text x="750" y="535" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#0f172a">Settings</text>
-  
-  <ellipse cx="600" cy="620" rx="100" ry="40" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
-  <text x="600" y="628" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#0f172a">Export Data</text>
-  
-  <!-- Connections - Healthcare Professional -->
-  <line x1="180" y1="270" x2="330" y2="180" stroke="#14b8a6" stroke-width="2"/>
-  <line x1="180" y1="270" x2="630" y2="180" stroke="#14b8a6" stroke-width="2"/>
-  <line x1="180" y1="270" x2="330" y2="280" stroke="#14b8a6" stroke-width="2"/>
-  <line x1="180" y1="270" x2="630" y2="280" stroke="#14b8a6" stroke-width="2"/>
-  <line x1="180" y1="270" x2="330" y2="380" stroke="#14b8a6" stroke-width="2"/>
-  <line x1="180" y1="270" x2="630" y2="380" stroke="#14b8a6" stroke-width="2"/>
-  
-  <!-- Connections - System Admin -->
-  <line x1="1020" y1="290" x2="880" y2="520" stroke="#f59e0b" stroke-width="2"/>
-  <line x1="1020" y1="290" x2="580" y2="520" stroke="#f59e0b" stroke-width="2"/>
-  <line x1="1020" y1="380" x2="700" y2="620" stroke="#f59e0b" stroke-width="2"/>
-  
-  <!-- Legend -->
-  <rect x="50" y="680" width="200" height="80" fill="#f9fafb" stroke="#9ca3af" stroke-width="1"/>
-  <text x="150" y="705" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1f2937">Legend</text>
-  <ellipse cx="80" cy="730" rx="30" ry="15" fill="#e0f2fe" stroke="#0891b2" stroke-width="1"/>
-  <text x="130" y="735" font-family="Arial, sans-serif" font-size="11" fill="#374151">Healthcare Use Case</text>
-  <ellipse cx="80" cy="755" rx="30" ry="15" fill="#fef3c7" stroke="#f59e0b" stroke-width="1"/>
-  <text x="130" y="760" font-family="Arial, sans-serif" font-size="11" fill="#374151">Admin Use Case</text>
+  <g transform="translate(50, 100)">
+    <text x="50" y="-10" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#334155">Actors</text>
+    <!-- Actor: Healthcare Prof -->
+    <g transform="translate(0, 50)">
+      <circle cx="50" cy="20" r="15" fill="none" stroke="#0ea5e9" stroke-width="2"/>
+      <line x1="50" y1="35" x2="50" y2="70" stroke="#0ea5e9" stroke-width="2"/>
+      <line x1="30" y1="50" x2="70" y2="50" stroke="#0ea5e9" stroke-width="2"/>
+      <line x1="50" y1="70" x2="35" y2="95" stroke="#0ea5e9" stroke-width="2"/>
+      <line x1="50" y1="70" x2="65" y2="95" stroke="#0ea5e9" stroke-width="2"/>
+      <text x="50" y="115" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#0ea5e9">Health Professional</text>
+    </g>
+    <!-- Actor: Admin -->
+    <g transform="translate(0, 250)">
+      <circle cx="50" cy="20" r="15" fill="none" stroke="#6366f1" stroke-width="2"/>
+      <line x1="50" y1="35" x2="50" y2="70" stroke="#6366f1" stroke-width="2"/>
+      <line x1="30" y1="50" x2="70" y2="50" stroke="#6366f1" stroke-width="2"/>
+      <line x1="50" y1="70" x2="35" y2="95" stroke="#6366f1" stroke-width="2"/>
+      <line x1="50" y1="70" x2="65" y2="95" stroke="#6366f1" stroke-width="2"/>
+      <text x="50" y="115" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#6366f1">System Admin</text>
+    </g>
+  </g>
+
+  <rect x="250" y="80" width="650" height="480" fill="white" stroke="#94a3b8" stroke-width="2" rx="10"/>
+  <text x="575" y="105" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#64748b">HealthAI Pro System Boundary</text>
+
+  <!-- Use Case Ovals -->
+  <g transform="translate(350, 140)" fill="white" stroke="#0ea5e9" stroke-width="1.5">
+    <ellipse cx="200" cy="0" rx="140" ry="25"/>
+    <text x="200" y="5" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#0f172a" stroke="none">View Dashboard Overview</text>
+    
+    <ellipse cx="200" cy="70" rx="140" ry="25"/>
+    <text x="200" y="75" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#0f172a" stroke="none">Analyze Patient Data</text>
+    
+    <ellipse cx="200" cy="140" rx="140" ry="25" stroke="#10b981"/>
+    <text x="200" y="145" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#0f172a" stroke="none" font-weight="bold">Predict Health Risks</text>
+    
+    <ellipse cx="200" cy="210" rx="140" ry="25"/>
+    <text x="200" y="215" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#0f172a" stroke="none">View High-Risk Patients</text>
+    
+    <ellipse cx="200" cy="280" rx="140" ry="25"/>
+    <text x="200" y="285" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#0f172a" stroke="none">Monitor System KPIs</text>
+    
+    <ellipse cx="200" cy="350" rx="140" ry="25" stroke="#6366f1"/>
+    <text x="200" y="355" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#0f172a" stroke="none">Manage System Settings</text>
+  </g>
+
+  <!-- Connections -->
+  <g stroke="#94a3b8" stroke-width="1.5" opacity="0.6">
+    <!-- Healthcare Prof Lines -->
+    <line x1="120" y1="165" x2="410" y2="140"/>
+    <line x1="120" y1="165" x2="410" y2="210"/>
+    <line x1="120" y1="165" x2="410" y2="280"/>
+    <line x1="120" y1="165" x2="410" y2="350"/>
+    
+    <!-- Admin Lines -->
+    <line x1="120" y1="365" x2="410" y2="490"/>
+    <line x1="120" y1="365" x2="410" y2="280"/>
+  </g>
 </svg>

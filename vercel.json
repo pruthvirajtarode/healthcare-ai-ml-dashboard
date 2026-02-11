@@ -1,11 +1,22 @@
 {
   "version": 2,
-  "public": true,
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
     {
-      "source": "/",
+      "source": "/diagrams/(.*)",
+      "destination": "/diagrams/$1"
+    },
+    {
+      "source": "/backend/(.*)",
+      "destination": "/backend/$1"
+    },
+    {
+      "source": "/scripts/(.*)",
+      "destination": "/scripts/$1"
+    },
+    {
+      "source": "/(index.html)?",
       "destination": "/frontend/index.html"
     },
     {
