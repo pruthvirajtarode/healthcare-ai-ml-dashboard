@@ -47,7 +47,7 @@ Follow these simple steps to deploy your Healthcare AI/ML dashboard to Vercel.
    - **Framework Preset**: Other
    - **Root Directory**: `./` (leave as default)
    - **Build Command**: Leave empty
-   - **Output Directory**: `frontend`
+   - **Output Directory**: `.` (The `vercel.json` rewrite handles the subfolder)
    - Click "Deploy"
 
 4. **Wait for Deployment** ⏳

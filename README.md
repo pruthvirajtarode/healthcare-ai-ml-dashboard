@@ -9,7 +9,7 @@
 
 A professional, production-ready healthcare dashboard that uses advanced machine learning to analyze patient data, predict health risks, and provide comprehensive healthcare analytics with 92.86% accuracy.
 
-**🌐 Live Demo**: [Deploy on Vercel](https://vercel.com) (See DEPLOYMENT.md for instructions)
+**🌐 Live Demo**: [healthcare-ai-ml-dashboard-14ua.vercel.app](https://healthcare-ai-ml-dashboard-14ua.vercel.app)
 
 ---
 
@@ -81,23 +81,25 @@ See **[DEPLOYMENT.md](DEPLOYMENT.md)** for detailed Vercel deployment instructio
 
 ```
 healthcare-ml-project/
-├── frontend/                 # Frontend application
-│   ├── index.html           # Main dashboard
-│   ├── styles.css           # All styles
-│   ├── app.js              # Application logic
-│   ├── data.js             # Healthcare dataset
-│   └── assets/             # Images and SVGs
-├── diagrams/                # UML documentation
-│   ├── use-case-diagram.svg
-│   ├── class-diagram.svg
-│   ├── sequence-diagram.svg
-│   ├── system-architecture.svg
-│   ├── index.html          # Diagram viewer
-│   └── README.md           # Diagram documentation
-├── vercel.json             # Vercel configuration
-├── .gitignore              # Git ignore rules
-├── DEPLOYMENT.md           # Deployment guide
-└── README.md               # This file
+├── frontend/                 # Frontend UI components
+│   ├── index.html           # Main dashboard UI
+│   ├── styles.css           # Premium styling & glassmorphism
+│   ├── app.js              # Frontend logic & Chart.js integration
+│   └── data.js             # Patient dataset module
+├── backend/                  # Data science & python processing
+│   ├── app.py               # ML processing logic
+│   ├── run_pipeline.py      # Data cleaning pipeline
+│   ├── config.py            # System configuration
+│   └── requirements.txt     # Python dependencies
+├── diagrams/                # Professional UML documentation
+│   ├── use-case-diagram.svg / .png
+│   ├── class-diagram.svg / .png
+│   ├── sequence-diagram.svg / .png
+│   ├── system-architecture.svg / .png
+│   └── index.html          # Visual diagram viewer
+├── vercel.json             # Vercel routing configuration
+├── DEPLOYMENT.md           # Deployment manual
+└── README.md               # Project documentation
 ```
 
 ---
@@ -200,10 +202,17 @@ See **[diagrams/system-architecture.svg](diagrams/system-architecture.svg)** for
 - **[diagrams/index.html](diagrams/index.html)** - Visual diagram viewer
 
 ### UML Diagrams
-- ✅ Use Case Diagram - System functionality
-- ✅ Class Diagram - Object-oriented structure
-- ✅ Sequence Diagram - Risk prediction workflow
-- ✅ System Architecture - Complete system design
+### ✅ Use Case Diagram
+![Use Case Diagram](diagrams/use-case-diagram.png)
+
+### ✅ Class Diagram
+![Class Diagram](diagrams/class-diagram.png)
+
+### ✅ Sequence Diagram
+![Sequence Diagram](diagrams/sequence-diagram.png)
+
+### ✅ System Architecture
+![System Architecture](diagrams/system-architecture.png)
 
 ---
 
@@ -294,6 +303,6 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 © 2026 Healthcare AI/ML Project | Data-Driven Patient Risk Assessment
 
-[Live Demo](https://your-project.vercel.app) • [Report Bug](https://github.com/yourusername/healthcare-ai-ml-dashboard/issues) • [Request Feature](https://github.com/yourusername/healthcare-ai-ml-dashboard/issues)
+[Live Demo](https://healthcare-ai-ml-dashboard-14ua.vercel.app) • [Report Bug](https://github.com/pruthvirajtarode/healthcare-ai-ml-dashboard/issues) • [Request Feature](https://github.com/pruthvirajtarode/healthcare-ai-ml-dashboard/issues)
 
 </div>
