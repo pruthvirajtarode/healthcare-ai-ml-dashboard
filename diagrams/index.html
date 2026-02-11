@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare AI/ML - UML Diagrams</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            text-align: center;
+            color: #1f2937;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #6b7280;
+            font-size: 1.1em;
+            margin-bottom: 40px;
+        }
+
+        .diagram-section {
+            margin-bottom: 60px;
+            border: 2px solid #e5e7eb;
+            border-radius: 15px;
+            padding: 30px;
+            background: #f9fafb;
+        }
+
+        .diagram-section h2 {
+            color: #14b8a6;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .diagram-section p {
+            color: #4b5563;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .diagram-container {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            overflow-x: auto;
+        }
+
+        .diagram-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+        }
+
+        .download-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(20, 184, 166, 0.3);
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(20, 184, 166, 0.5);
+        }
+
+        .icon {
+            font-size: 1.5em;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #e5e7eb;
+            color: #6b7280;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>🏥 Healthcare AI/ML System</h1>
+        <p class="subtitle">Professional UML Diagrams & System Documentation</p>
+
+        <!-- Use Case Diagram -->
+        <div class="diagram-section">
+            <h2><span class="icon">👥</span> Use Case Diagram</h2>
+            <p>
+                This diagram illustrates the system functionality from different user perspectives. It shows how
+                Healthcare Professionals
+                and System Administrators interact with the HealthAI Pro system through various use cases such as
+                viewing dashboards,
+                analyzing patient data, predicting health risks, and managing system settings.
+            </p>
+            <div class="diagram-container">
+                <img src="use-case-diagram.svg" alt="Use Case Diagram">
+            </div>
+            <a href="use-case-diagram.svg" download class="download-btn">📥 Download SVG</a>
+        </div>
+
+        <!-- Class Diagram -->
+        <div class="diagram-section">
+            <h2><span class="icon">🏗️</span> Class Diagram</h2>
+            <p>
+                The class diagram defines the object-oriented structure of our system. It shows five main classes:
+                Patient (core data model),
+                DataProcessor (data cleaning & validation), RiskAnalyzer (ML prediction engine), Dashboard (UI
+                controller), and KPICalculator
+                (metrics computation). The diagram also illustrates the relationships and dependencies between these
+                classes.
+            </p>
+            <div class="diagram-container">
+                <img src="class-diagram.svg" alt="Class Diagram">
+            </div>
+            <a href="class-diagram.svg" download class="download-btn">📥 Download SVG</a>
+        </div>
+
+        <!-- Sequence Diagram -->
+        <div class="diagram-section">
+            <h2><span class="icon">🔄</span> Sequence Diagram</h2>
+            <p>
+                This sequence diagram illustrates the complete risk prediction workflow. It shows the step-by-step
+                interaction between the User,
+                Dashboard UI, Data Processor, ML Model, and Database when a healthcare professional requests a patient
+                risk prediction.
+                The diagram demonstrates our 92.86% accuracy ML prediction pipeline in action.
+            </p>
+            <div class="diagram-container">
+                <img src="sequence-diagram.svg" alt="Sequence Diagram">
+            </div>
+            <a href="sequence-diagram.svg" download class="download-btn">📥 Download SVG</a>
+        </div>
+
+        <!-- System Architecture -->
+        <div class="diagram-section">
+            <h2><span class="icon">⚙️</span> System Architecture</h2>
+            <p>
+                The system architecture diagram provides a comprehensive view of our three-tier healthcare platform. It
+                shows the Presentation Layer
+                (web/mobile browsers and UI), Application Layer (controllers, data management, risk analysis), Data
+                Layer (databases and storage),
+                and External Services (ML training, validation, authentication). This architecture ensures scalability,
+                maintainability, and security.
+            </p>
+            <div class="diagram-container">
+                <img src="system-architecture.svg" alt="System Architecture">
+            </div>
+            <a href="system-architecture.svg" download class="download-btn">📥 Download SVG</a>
+        </div>
+
+        <footer>
+            <p><strong>Healthcare AI/ML Project</strong> - Data-Driven Patient Risk Assessment</p>
+            <p>© 2026 | Professional UML Documentation</p>
+            <p style="margin-top: 10px; font-size: 0.9em;">
+                All diagrams created using SVG (Scalable Vector Graphics) for perfect quality at any size
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>

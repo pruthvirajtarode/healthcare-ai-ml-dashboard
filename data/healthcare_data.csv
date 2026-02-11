@@ -1,0 +1,86 @@
+Patient_ID,Name,Age,BMI,Blood_Pressure,Glucose,Disease_Risk,City
+2001,Divya,35.0,-5.0,150.0,140.0,Heart Risk,Jaipur
+2002,Suresh,150.0,28.0,160.0,180.0,Hypertension,Delhi
+2003,Arjun,45.0,25.0,300.0,80.0,Heart Risk,Chennai
+2004,Ankit,30.0,30.0,120.0,160.0,Heart Risk,Pune
+2005,Vikas,45.0,28.0,130.0,180.0,Diabetes,Bangalore
+2006,Pooja,25.0,25.0,150.0,90.0,Hypertension,Pune
+2007,Manish,35.0,35.0,110.0,160.0,Heart Risk,Jaipur
+2008,Priya,50.0,nan,160.0,80.0,Asthma,Chennai
+2009,Rahul,50.0,-5.0,160.0,120.0,Diabetes,Mumbai
+2010,Rohit,65.0,22.0,120.0,160.0,Diabetes,Chennai
+2011,Varun,65.0,28.0,110.0,100.0,Asthma,Mumbai
+2012,Vikas,55.0,22.0,nan,100.0,Diabetes,Jaipur
+2013,Priya,65.0,25.0,140.0,-20.0,Heart Risk,Pune
+2014,Isha,nan,35.0,110.0,nan,Normal,Jaipur
+2015,Priya,50.0,nan,110.0,-20.0,Hypertension,Bangalore
+2016,Rohit,50.0,28.0,300.0,120.0,Diabetes,Bangalore
+2017,Pooja,55.0,18.0,300.0,180.0,Diabetes,Jaipur
+2018,Vikas,45.0,25.0,120.0,100.0,Diabetes,Pune
+2019,Arjun,60.0,35.0,110.0,180.0,Normal,Jaipur
+2020,Amit,nan,25.0,120.0,-20.0,Normal,Jaipur
+2021,Neha,25.0,25.0,160.0,180.0,Asthma,Delhi
+2022,Suresh,40.0,22.0,300.0,180.0,Diabetes,Chennai
+2023,Pooja,35.0,-5.0,120.0,nan,Diabetes,Delhi
+2024,Varun,nan,28.0,150.0,120.0,Asthma,Pune
+2025,Sneha,nan,40.0,140.0,140.0,Heart Risk,Delhi
+2026,Riya,150.0,40.0,160.0,180.0,Asthma,Bangalore
+2027,Arjun,55.0,30.0,130.0,-20.0,Heart Risk,Chennai
+2028,Suresh,40.0,22.0,nan,90.0,Normal,Chennai
+2029,Sneha,25.0,nan,nan,180.0,Hypertension,Pune
+2030,Meera,25.0,nan,130.0,140.0,Asthma,Mumbai
+2031,Rahul,150.0,25.0,160.0,140.0,Diabetes,Delhi
+2032,Rahul,55.0,22.0,150.0,nan,Normal,Pune
+2033,Komal,150.0,35.0,130.0,120.0,Hypertension,Chennai
+2034,Priya,45.0,nan,nan,120.0,Hypertension,Delhi
+2035,Manish,45.0,22.0,nan,160.0,Heart Risk,Pune
+2036,Amit,150.0,18.0,300.0,90.0,Heart Risk,Jaipur
+2037,Pooja,45.0,18.0,150.0,nan,Heart Risk,Jaipur
+2038,Riya,60.0,nan,120.0,-20.0,Hypertension,Bangalore
+2039,Sneha,40.0,30.0,150.0,140.0,Heart Risk,Bangalore
+2040,Riya,25.0,35.0,nan,-20.0,Normal,Jaipur
+2041,Komal,35.0,18.0,140.0,120.0,Hypertension,Delhi
+2042,Divya,65.0,22.0,130.0,180.0,Heart Risk,Delhi
+2043,Komal,150.0,nan,160.0,80.0,Normal,Jaipur
+2044,Varun,65.0,18.0,110.0,80.0,Asthma,Delhi
+2045,Rahul,25.0,18.0,300.0,80.0,Diabetes,Bangalore
+2046,Vikas,25.0,40.0,110.0,80.0,Heart Risk,Mumbai
+2047,Karan,65.0,40.0,nan,100.0,Heart Risk,Delhi
+2048,Priya,30.0,18.0,140.0,nan,Normal,Pune
+2049,Manish,50.0,25.0,150.0,80.0,Diabetes,Mumbai
+2050,Karan,30.0,40.0,300.0,nan,Hypertension,Bangalore
+2051,Rohit,40.0,nan,160.0,160.0,Heart Risk,Bangalore
+2052,Ankit,55.0,35.0,160.0,80.0,Normal,Pune
+2053,Anjali,25.0,35.0,300.0,80.0,Heart Risk,Mumbai
+2054,Neha,150.0,nan,140.0,nan,Heart Risk,Jaipur
+2055,Sneha,35.0,30.0,140.0,-20.0,Asthma,Chennai
+2056,Amit,30.0,-5.0,110.0,-20.0,Heart Risk,Bangalore
+2057,Rahul,50.0,40.0,150.0,-20.0,Normal,Jaipur
+2058,Vikas,nan,35.0,120.0,80.0,Diabetes,Bangalore
+2059,Anjali,35.0,18.0,140.0,-20.0,Hypertension,Pune
+2060,Komal,50.0,nan,150.0,180.0,Heart Risk,Delhi
+2061,Sneha,65.0,25.0,300.0,-20.0,Normal,Pune
+2062,Rahul,30.0,35.0,160.0,140.0,Normal,Delhi
+2063,Sneha,25.0,22.0,160.0,90.0,Hypertension,Delhi
+2064,Anjali,30.0,nan,160.0,90.0,Diabetes,Delhi
+2065,Vikas,150.0,40.0,160.0,180.0,Asthma,Pune
+2066,Manish,30.0,22.0,150.0,140.0,Normal,Delhi
+2067,Varun,50.0,22.0,110.0,100.0,Asthma,Delhi
+2068,Divya,nan,nan,140.0,90.0,Diabetes,Jaipur
+2069,Priya,60.0,40.0,130.0,180.0,Asthma,Mumbai
+2070,Arjun,65.0,22.0,160.0,140.0,Asthma,Jaipur
+2071,Varun,30.0,-5.0,120.0,-20.0,Asthma,Mumbai
+2072,Rahul,nan,35.0,nan,120.0,Diabetes,Pune
+2073,Karan,40.0,30.0,300.0,140.0,Hypertension,Chennai
+2074,Suresh,nan,nan,nan,nan,Heart Risk,Delhi
+2075,Neha,25.0,22.0,140.0,-20.0,Diabetes,Mumbai
+2076,Priya,35.0,nan,110.0,160.0,Diabetes,Delhi
+2077,Meera,45.0,40.0,300.0,140.0,Heart Risk,Mumbai
+2078,Manish,150.0,28.0,150.0,-20.0,Hypertension,Bangalore
+2079,Riya,40.0,28.0,nan,160.0,Heart Risk,Chennai
+2080,Varun,25.0,25.0,110.0,90.0,Diabetes,Mumbai
+2081,Varun,40.0,28.0,120.0,100.0,Heart Risk,Chennai
+2082,Priya,45.0,28.0,160.0,-20.0,Heart Risk,Bangalore
+2083,Varun,55.0,25.0,150.0,180.0,Hypertension,Chennai
+2084,Komal,35.0,-5.0,160.0,90.0,Diabetes,Delhi
+2085,Riya,35.0,35.0,300.0,120.0,Hypertension,Delhi

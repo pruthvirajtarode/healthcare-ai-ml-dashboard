@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hospital and patient illustration">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1">
+      <stop offset="0%" stop-color="#6b8cff"/>
+      <stop offset="100%" stop-color="#7dd3fc"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" x2="1">
+      <stop offset="0%" stop-color="#edf2ff"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background soft shape -->
+  <ellipse cx="600" cy="420" rx="300" ry="200" fill="url(#g2)" />
+
+  <!-- Hospital building -->
+  <rect x="80" y="140" width="360" height="260" rx="12" fill="#ffffff" stroke="#dbeafe" stroke-width="3"/>
+  <rect x="220" y="90" width="120" height="80" rx="10" fill="url(#g1)" />
+  <rect x="260" y="120" width="40" height="20" rx="4" fill="#fff" opacity="0.35"/>
+  <!-- Cross -->
+  <rect x="290" y="110" width="20" height="60" rx="3" fill="#fff"/>
+  <rect x="270" y="130" width="60" height="20" rx="3" fill="#fff"/>
+
+  <!-- Windows -->
+  <g fill="#e6f0ff">
+    <rect x="110" y="180" width="60" height="50" rx="6"/>
+    <rect x="190" y="180" width="60" height="50" rx="6"/>
+    <rect x="270" y="180" width="60" height="50" rx="6"/>
+    <rect x="350" y="180" width="60" height="50" rx="6"/>
+    <rect x="110" y="250" width="60" height="50" rx="6"/>
+    <rect x="190" y="250" width="60" height="50" rx="6"/>
+    <rect x="270" y="250" width="60" height="50" rx="6"/>
+    <rect x="350" y="250" width="60" height="50" rx="6"/>
+  </g>
+
+  <!-- Patient figure -->
+  <g transform="translate(520,280)">
+    <circle cx="0" cy="-60" r="34" fill="#1f2937" opacity="0.95"/>
+    <path d="M-40 10 C-40 -10 40 -10 40 10 L40 70 C40 90 -40 90 -40 70 Z" fill="#111827" opacity="0.95"/>
+    <rect x="-16" y="10" width="32" height="40" rx="8" fill="#fff" opacity="0.06"/>
+  </g>
+
+  <!-- Accent shapes -->
+  <circle cx="640" cy="120" r="36" fill="#7dd3fc" opacity="0.35"/>
+  <circle cx="720" cy="180" r="18" fill="#6b8cff" opacity="0.25"/>
+
+</svg>

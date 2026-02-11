@@ -1,0 +1,57 @@
+{
+  "overall_metrics": {
+    "total_patients": 68,
+    "average_age": 42.65,
+    "average_bmi": 27.03,
+    "average_blood_pressure": 166.5,
+    "average_glucose": 128.73
+  },
+  "health_score_kpis": {
+    "average_health_score": 57.7,
+    "patients_excellent_health": 0,
+    "patients_good_health": 37,
+    "patients_poor_health": 10
+  },
+  "risk_score_kpis": {
+    "average_risk_score": 68.15,
+    "high_risk_patients": 52,
+    "medium_risk_patients": 15,
+    "low_risk_patients": 1
+  },
+  "disease_kpis": {
+    "heart_risk_patients": 20,
+    "diabetes_patients": 16,
+    "hypertension_patients": 12,
+    "asthma_patients": 10,
+    "normal_health_patients": 10
+  },
+  "cardiovascular_kpis": {
+    "average_cardiovascular_risk": 46.74,
+    "hypertension_risk_patients": 32
+  },
+  "metabolic_kpis": {
+    "average_metabolic_health": 46.12,
+    "patients_with_good_metabolism": 0,
+    "patients_with_poor_metabolism": 33
+  },
+  "bmi_distribution": {
+    "Obese": 28,
+    "Overweight": 21,
+    "Normal": 12,
+    "Underweight": 7
+  },
+  "age_group_distribution": {
+    "Middle_Age": 24,
+    "Young_Adult": 19,
+    "Senior": 17,
+    "Elderly": 8,
+    "Child_Teen": 0
+  },
+  "city_distribution_top5": {
+    "Delhi": 16,
+    "Chennai": 11,
+    "Pune": 11,
+    "Mumbai": 11,
+    "Bangalore": 10
+  }
+}

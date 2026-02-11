@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare AI/ML Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header saas-header">
+            <div class="header-content">
+                <div class="logo-section">
+                    <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="45" fill="rgba(255,255,255,0.1)" stroke="white" stroke-width="2" />
+                        <path d="M30 60 Q50 40 70 60" stroke="white" stroke-width="3" fill="none"
+                            stroke-linecap="round" />
+                        <circle cx="35" cy="50" r="4" fill="white" />
+                        <circle cx="50" cy="35" r="4" fill="white" />
+                        <circle cx="65" cy="50" r="4" fill="white" />
+                    </svg>
+                    <div>
+                        <h1>HealthAI Pro</h1>
+                        <p class="tagline">AI-Powered Patient Risk Assessment & Analytics</p>
+                    </div>
+                </div>
+                <div class="header-stats">
+                    <div class="header-stat">
+                        <span class="stat-number">92.86%</span>
+                        <span class="stat-desc">Model Accuracy</span>
+                    </div>
+                    <div class="header-stat">
+                        <span class="stat-number">68</span>
+                        <span class="stat-desc">Clean Records</span>
+                    </div>
+                    <div class="header-stat">
+                        <span class="stat-number">40+</span>
+                        <span class="stat-desc">Features</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="navbar saas-navbar">
+            <div class="nav-container">
+                <button class="nav-btn active" onclick="switchTab('overview')">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M3 3h8v8H3V3M13 3h8v8h-8V3M3 13h8v8H3v-8M13 13h8v8h-8v-8" />
+                    </svg>
+                    Overview
+                </button>
+                <button class="nav-btn" onclick="switchTab('analytics')">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M3 3v18h18M4 20l4-10 4 6 4-8 4 10" />
+                    </svg>
+                    Analytics
+                </button>
+                <button class="nav-btn" onclick="switchTab('high-risk')">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z" />
+                    </svg>
+                    High-Risk
+                </button>
+                <button class="nav-btn" onclick="switchTab('kpis')">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M2 3h6v18H2zM10 7h6v14h-6zM18 5h6v16h-6z" />
+                    </svg>
+                    KPIs
+                </button>
+                <button class="nav-btn" onclick="switchTab('predictions')">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path
+                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z" />
+                    </svg>
+                    Predict
+                </button>
+            </div>
+        </nav>
+
+        <!-- Overview Tab -->
+        <div id="overview" class="tab-content active">
+            <!-- Full-Width Hero Section -->
+            <section class="fullwidth-hero">
+                <div class="hero-background">
+                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1400&h=600&fit=crop&q=80"
+                        alt="Modern Healthcare Technology"
+                        onerror="this.src='https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=1400&h=600&fit=crop&q=80'">
+                    <div class="hero-overlay"></div>
+                </div>
+                <div class="hero-content-overlay">
+                    <div class="hero-text-content">
+                        <h1 class="hero-main-title">AI-Powered Health Risk Analysis</h1>
+                        <p class="hero-main-description">Get instant patient risk analysis and comprehensive healthcare
+                            analytics using advanced zero-shot AI technology with 92.86% accuracy.</p>
+
+                        <div class="hero-stats-row">
+                            <div class="hero-stat-item">
+                                <div class="hero-stat-number">92.86%</div>
+                                <div class="hero-stat-label">Model Accuracy</div>
+                            </div>
+                            <div class="hero-stat-item">
+                                <div class="hero-stat-number">68</div>
+                                <div class="hero-stat-label">Clean Records</div>
+                            </div>
+                            <div class="hero-stat-item">
+                                <div class="hero-stat-number">40+</div>
+                                <div class="hero-stat-label">Features</div>
+                            </div>
+                        </div>
+
+                        <div class="hero-cta-buttons">
+                            <button class="btn-hero-primary" onclick="switchTab('high-risk')">Get Started →</button>
+                            <button class="btn-hero-secondary"
+                                onclick="alert('HealthAI Pro uses advanced machine learning to analyze patient data and predict health risks with 92.86% accuracy. Navigate through the tabs above to explore Analytics, High-Risk Predictions, KPIs, and Patient Predictions.')">Learn
+                                More</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>📊 Dashboard Overview</h2>
+                <div class="cards-grid saas-cards">
+                    <div class="card stat-card">
+                        <div class="stat-icon">👥</div>
+                        <div class="stat-content">
+                            <div class="stat-value" id="totalPatients">-</div>
+                            <div class="stat-label">Total Patients</div>
+                        </div>
+                    </div>
+                    <div class="card stat-card">
+                        <div class="stat-icon">⚠️</div>
+                        <div class="stat-content">
+                            <div class="stat-value" id="highRiskCount">-</div>
+                            <div class="stat-label">High-Risk Patients</div>
+                        </div>
+                    </div>
+                    <div class="card stat-card">
+                        <div class="stat-icon">📈</div>
+                        <div class="stat-content">
+                            <div class="stat-value" id="avgRiskScore">-</div>
+                            <div class="stat-label">Avg Risk Score</div>
+                        </div>
+                    </div>
+                    <div class="card stat-card">
+                        <div class="stat-icon">❤️</div>
+                        <div class="stat-content">
+                            <div class="stat-value" id="avgHealthScore">-</div>
+                            <div class="stat-label">Avg Health Score</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>📋 Data Cleaning Summary</h2>
+                <div class="summary-box">
+                    <p><strong>Missing Values Handled:</strong> Age, BMI, Blood Pressure, Glucose (filled with median)
+                    </p>
+                    <p><strong>Invalid Records Removed:</strong> Age > 100, Negative BMI/Glucose values, Extreme BP
+                        (>300)</p>
+                    <p><strong>Data Quality:</strong> All records validated and cleaned for ML modeling</p>
+                    <p><strong>Features Engineered:</strong> 40+ derived features including Health Score, Risk Score,
+                        Metabolic Health indicators</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- Analytics Tab -->
+        <div id="analytics" class="tab-content">
+            <section class="section">
+                <h2>📊 Medical Metrics Analysis</h2>
+                <div class="charts-grid">
+                    <div class="chart-container">
+                        <canvas id="ageDistributionChart"></canvas>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="bmiDistributionChart"></canvas>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="diseaseRiskChart"></canvas>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="bpGlucoseChart"></canvas>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>🏙️ Geographic Distribution</h2>
+                <div class="charts-grid">
+                    <div class="chart-container" style="grid-column: 1 / -1;">
+                        <canvas id="cityDistributionChart"></canvas>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- High-Risk Patients Tab -->
+        <div id="high-risk" class="tab-content">
+            <section class="section">
+                <h2>⚠️ High-Risk Patient Analysis</h2>
+                <div class="cards-grid">
+                    <div class="card stat-card">
+                        <div class="stat-icon">🚨</div>
+                        <div class="stat-content">
+                            <div class="stat-value" id="highRiskPercentage">-</div>
+                            <div class="stat-label">% High-Risk</div>
+                        </div>
+                    </div>
+                    <div class="card stat-card">
+                        <div class="stat-icon">❤️‍🩹</div>
+                        <div class="stat-content">
+                            <div class="stat-value" id="highRiskHeartDiseases">-</div>
+                            <div class="stat-label">Heart Risk Cases</div>
+                        </div>
+                    </div>
+                    <div class="card stat-card">
+                        <div class="stat-icon">🩺</div>
+                        <div class="stat-content">
+                            <div class="stat-value" id="highRiskDiabetes">-</div>
+                            <div class="stat-label">Diabetes Cases</div>
+                        </div>
+                    </div>
+                    <div class="card stat-card">
+                        <div class="stat-icon">📍</div>
+                        <div class="stat-content">
+                            <div class="stat-value" id="highRiskHypertension">-</div>
+                            <div class="stat-label">Hypertension Cases</div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 style="margin-top: 30px;">Risk Profile Distribution</h3>
+                <div class="charts-grid">
+                    <div class="chart-container" style="grid-column: 1 / -1;">
+                        <canvas id="highRiskProfileChart"></canvas>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>📋 High-Risk Patient Criteria</h2>
+                <div class="summary-box">
+                    <p><strong>Risk Factors:</strong></p>
+                    <ul>
+                        <li>Heart Risk or Diabetes or Hypertension diagnosis</li>
+                        <li>Age > 50 years</li>
+                        <li>BMI ≥ 30 (Obese) or < 18.5 (Underweight)</li>
+                        <li>Glucose level > 125 mg/dL</li>
+                        <li>Blood Pressure > 140 mmHg</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <!-- KPIs Tab -->
+        <div id="kpis" class="tab-content">
+            <section class="section">
+                <h2>📊 Key Performance Indicators (KPIs)</h2>
+
+                <h3>Overall Health Metrics</h3>
+                <div class="kpi-table">
+                    <table>
+                        <tr>
+                            <th>Metric</th>
+                            <th>Value</th>
+                        </tr>
+                        <tr>
+                            <td>Average Age</td>
+                            <td id="kpiAvgAge">-</td>
+                        </tr>
+                        <tr>
+                            <td>Average BMI</td>
+                            <td id="kpiAvgBMI">-</td>
+                        </tr>
+                        <tr>
+                            <td>Average Blood Pressure</td>
+                            <td id="kpiAvgBP">-</td>
+                        </tr>
+                        <tr>
+                            <td>Average Glucose</td>
+                            <td id="kpiAvgGlucose">-</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <h3 style="margin-top: 30px;">Health Status Distribution</h3>
+                <div class="kpi-table">
+                    <table>
+                        <tr>
+                            <th>Category</th>
+                            <th>Count</th>
+                            <th>Percentage</th>
+                        </tr>
+                        <tr>
+                            <td>Excellent Health (Score ≥ 75)</td>
+                            <td id="healthExcellent">-</td>
+                            <td id="healthExcellentPct">-</td>
+                        </tr>
+                        <tr>
+                            <td>Good Health (50-75)</td>
+                            <td id="healthGood">-</td>
+                            <td id="healthGoodPct">-</td>
+                        </tr>
+                        <tr>
+                            <td>Poor Health (< 50)</td>
+                            <td id="healthPoor">-</td>
+                            <td id="healthPoorPct">-</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <h3 style="margin-top: 30px;">Disease Distribution</h3>
+                <div class="kpi-table">
+                    <table>
+                        <tr>
+                            <th>Disease Type</th>
+                            <th>Count</th>
+                        </tr>
+                        <tr>
+                            <td>Heart Risk</td>
+                            <td id="diseaseHeart">-</td>
+                        </tr>
+                        <tr>
+                            <td>Diabetes</td>
+                            <td id="diseaseDiabetes">-</td>
+                        </tr>
+                        <tr>
+                            <td>Hypertension</td>
+                            <td id="diseaseHypertension">-</td>
+                        </tr>
+                        <tr>
+                            <td>Asthma</td>
+                            <td id="diseaseAsthma">-</td>
+                        </tr>
+                        <tr>
+                            <td>Normal</td>
+                            <td id="diseaseNormal">-</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+        </div>
+
+        <!-- Predictions Tab -->
+        <div id="predictions" class="tab-content">
+            <section class="section">
+                <h2>🔮 ML-Based Risk Prediction</h2>
+                <div class="form-container">
+                    <h3>Enter Patient Health Information</h3>
+                    <form id="predictForm" onsubmit="predictRisk(event)">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="predName">Patient Name:</label>
+                                <input type="text" id="predName" placeholder="e.g., John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="predAge">Age (years):</label>
+                                <input type="number" id="predAge" min="0" max="100" placeholder="30" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="predBMI">BMI:</label>
+                                <input type="number" id="predBMI" min="10" max="50" step="0.1" placeholder="24.5"
+                                    required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="predBP">Blood Pressure (mmHg):</label>
+                                    <input type="number" id="predBP" min="60" max="200" placeholder="120" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="predGlucose">Glucose (mg/dL):</label>
+                                    <input type="number" id="predGlucose" min="50" max="300" placeholder="100" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="predDisease">Disease Type:</label>
+                                    <select id="predDisease" required>
+                                        <option value="">Select...</option>
+                                        <option value="Normal">Normal</option>
+                                        <option value="Asthma">Asthma</option>
+                                        <option value="Hypertension">Hypertension</option>
+                                        <option value="Diabetes">Diabetes</option>
+                                        <option value="Heart Risk">Heart Risk</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="predCity">City:</label>
+                                    <select id="predCity" required>
+                                        <option value="">Select...</option>
+                                        <option value="Jaipur">Jaipur</option>
+                                        <option value="Delhi">Delhi</option>
+                                        <option value="Chennai">Chennai</option>
+                                        <option value="Pune">Pune</option>
+                                        <option value="Bangalore">Bangalore</option>
+                                        <option value="Mumbai">Mumbai</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary">Predict Risk</button>
+                                <button type="reset" class="btn btn-secondary">Clear</button>
+                            </div>
+                    </form>
+                </div>
+
+                <div id="predictionResult" class="hidden">
+                    <h3>Prediction Result</h3>
+                    <div id="resultContent" class="result-container"></div>
+                </div>
+
+                <section class="section" style="margin-top: 40px;">
+                    <h3>ML Model Information</h3>
+                    <div class="summary-box">
+                        <p><strong>Model Used:</strong> Random Forest Classifier with 100 estimators</p>
+                        <p><strong>Training Accuracy:</strong> 87.5%</p>
+                        <p><strong>Test Accuracy:</strong> 85.2%</p>
+                        <p><strong>Features Used:</strong> 15 engineered health features</p>
+                        <p><strong>Risk Categories:</strong> High-Risk (1) vs Low-Risk (0)</p>
+                        <p><strong>Threshold:</strong> Risk probability > 0.5 indicates high-risk patient</p>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 Healthcare AI/ML Project | Data-Driven Patient Risk Assessment</p>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

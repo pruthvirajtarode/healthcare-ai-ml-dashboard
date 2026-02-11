@@ -1,0 +1,140 @@
+{
+  "dataset_info": {
+    "total_samples": 68,
+    "feature_count": 15,
+    "target_variable": "High Risk (1) vs Low Risk (0)"
+  },
+  "train_test_split": {
+    "train_size": 54,
+    "test_size": 14,
+    "train_positive_class": 42,
+    "test_positive_class": 11
+  },
+  "class_weights": {
+    "0": 2.2666666666666666,
+    "1": 0.6415094339622641
+  },
+  "model_results": {
+    "logistic_regression": {
+      "accuracy": 0.8571428571428571,
+      "predictions": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "probabilities": [
+        0.9976271781757313,
+        0.9976417774755464,
+        0.5517200842468702,
+        0.9975124516959419,
+        0.3902865782183027,
+        0.9905275621020933,
+        0.916146097170989,
+        0.9992416607599657,
+        0.9997716066650437,
+        0.9997344952991689,
+        0.9996334331277513,
+        0.9347242034203613,
+        0.003326217958815525,
+        0.007713824423320975
+      ],
+      "feature_importance": {
+        "Age": -0.2827440505519447,
+        "BMI": -0.19353138613443394,
+        "Blood_Pressure": -0.41066152634714775,
+        "Glucose": 0.8017628978667874,
+        "Health_Score": -0.59576085717845,
+        "Risk_Score": 1.839877420945698,
+        "BMI_Deviation": 0.4147610548145163,
+        "Glucose_BMI_Ratio": 0.3719860396606141,
+        "Metabolic_Health": -0.470519295634216,
+        "Cardiovascular_Risk": -0.03407665372364264,
+        "Disease_Risk_Priority": 1.1496495919250977,
+        "Age_BMI_Interaction": -0.17523511073364437,
+        "BP_Glucose_Interaction": 0.03031598059088887,
+        "Metabolic_Stress": 0.5440461346609604,
+        "City_Encoded": -0.16443428871851742
+      }
+    },
+    "random_forest": {
+      "accuracy": 0.9285714285714286,
+      "predictions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "probabilities": [
+        0.89,
+        0.95,
+        0.75,
+        0.99,
+        0.75,
+        0.97,
+        0.6,
+        0.99,
+        1.0,
+        0.99,
+        1.0,
+        0.97,
+        0.26,
+        0.19
+      ],
+      "feature_importance": {
+        "Risk_Score": 0.3109348343654246,
+        "Glucose": 0.09932939341653543,
+        "Metabolic_Health": 0.09886575359478962,
+        "Metabolic_Stress": 0.0966269590176108,
+        "Disease_Risk_Priority": 0.08747881030890232,
+        "BP_Glucose_Interaction": 0.06434999354615945,
+        "Health_Score": 0.052385128916647906,
+        "Glucose_BMI_Ratio": 0.039432838084304075,
+        "Age_BMI_Interaction": 0.03507339987042227,
+        "Cardiovascular_Risk": 0.021767356881083597,
+        "BMI_Deviation": 0.021304661475493765,
+        "City_Encoded": 0.02039182717304782,
+        "BMI": 0.01986774589921688,
+        "Age": 0.01834442166806198,
+        "Blood_Pressure": 0.013846875782299577
+      }
+    }
+  },
+  "features_used": [
+    "Age",
+    "BMI",
+    "Blood_Pressure",
+    "Glucose",
+    "Health_Score",
+    "Risk_Score",
+    "BMI_Deviation",
+    "Glucose_BMI_Ratio",
+    "Metabolic_Health",
+    "Cardiovascular_Risk",
+    "Disease_Risk_Priority",
+    "Age_BMI_Interaction",
+    "BP_Glucose_Interaction",
+    "Metabolic_Stress",
+    "City_Encoded"
+  ]
+}

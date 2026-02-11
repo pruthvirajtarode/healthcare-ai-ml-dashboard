@@ -1,0 +1,66 @@
+Patient_ID,Name,Age,BMI,Blood_Pressure,Glucose,Disease_Risk,City,Age_Group,BMI_Category,BP_Category,Glucose_Category
+2001,Divya,35.0,25.0,150.0,140.0,Heart Risk,Jaipur,30-45,Overweight,Stage 1 Hypertension,Diabetic
+2003,Arjun,45.0,25.0,300.0,80.0,Heart Risk,Chennai,30-45,Overweight,Stage 2 Hypertension,Normal
+2004,Ankit,30.0,30.0,120.0,160.0,Heart Risk,Pune,18-30,Obese,Elevated,Diabetic
+2005,Vikas,45.0,28.0,130.0,180.0,Diabetes,Bangalore,30-45,Overweight,Elevated,Diabetic
+2006,Pooja,25.0,25.0,150.0,90.0,Hypertension,Pune,18-30,Overweight,Stage 1 Hypertension,Normal
+2007,Manish,35.0,35.0,110.0,160.0,Heart Risk,Jaipur,30-45,Obese,Normal,Diabetic
+2008,Priya,50.0,,160.0,80.0,Asthma,Chennai,45-60,Obese,Stage 2 Hypertension,Normal
+2009,Rahul,50.0,25.0,160.0,120.0,Diabetes,Mumbai,45-60,Overweight,Stage 2 Hypertension,Prediabetic
+2010,Rohit,65.0,22.0,120.0,160.0,Diabetes,Chennai,60+,Normal,Elevated,Diabetic
+2011,Varun,65.0,28.0,110.0,100.0,Asthma,Mumbai,60+,Overweight,Normal,Prediabetic
+2012,Vikas,55.0,22.0,,100.0,Diabetes,Jaipur,45-60,Normal,Stage 2 Hypertension,Prediabetic
+2013,Priya,65.0,25.0,140.0,130.0,Heart Risk,Pune,60+,Overweight,Stage 1 Hypertension,Diabetic
+2015,Priya,50.0,,110.0,130.0,Hypertension,Bangalore,45-60,Obese,Normal,Diabetic
+2016,Rohit,50.0,28.0,300.0,120.0,Diabetes,Bangalore,45-60,Overweight,Stage 2 Hypertension,Prediabetic
+2017,Pooja,55.0,18.0,300.0,180.0,Diabetes,Jaipur,45-60,Underweight,Stage 2 Hypertension,Diabetic
+2018,Vikas,45.0,25.0,120.0,100.0,Diabetes,Pune,30-45,Overweight,Elevated,Prediabetic
+2019,Arjun,60.0,35.0,110.0,180.0,Normal,Jaipur,45-60,Obese,Normal,Diabetic
+2021,Neha,25.0,25.0,160.0,180.0,Asthma,Delhi,18-30,Overweight,Stage 2 Hypertension,Diabetic
+2022,Suresh,40.0,22.0,300.0,180.0,Diabetes,Chennai,30-45,Normal,Stage 2 Hypertension,Diabetic
+2023,Pooja,35.0,25.0,120.0,,Diabetes,Delhi,30-45,Overweight,Elevated,Diabetic
+2027,Arjun,55.0,30.0,130.0,130.0,Heart Risk,Chennai,45-60,Obese,Elevated,Diabetic
+2029,Sneha,25.0,,,180.0,Hypertension,Pune,18-30,Obese,Stage 2 Hypertension,Diabetic
+2030,Meera,25.0,,130.0,140.0,Asthma,Mumbai,18-30,Obese,Elevated,Diabetic
+2032,Rahul,55.0,22.0,150.0,,Normal,Pune,45-60,Normal,Stage 1 Hypertension,Diabetic
+2034,Priya,45.0,,,120.0,Hypertension,Delhi,30-45,Obese,Stage 2 Hypertension,Prediabetic
+2035,Manish,45.0,22.0,,160.0,Heart Risk,Pune,30-45,Normal,Stage 2 Hypertension,Diabetic
+2037,Pooja,45.0,18.0,150.0,,Heart Risk,Jaipur,30-45,Underweight,Stage 1 Hypertension,Diabetic
+2038,Riya,60.0,,120.0,130.0,Hypertension,Bangalore,45-60,Obese,Elevated,Diabetic
+2039,Sneha,40.0,30.0,150.0,140.0,Heart Risk,Bangalore,30-45,Obese,Stage 1 Hypertension,Diabetic
+2040,Riya,25.0,35.0,,130.0,Normal,Jaipur,18-30,Obese,Stage 2 Hypertension,Diabetic
+2041,Komal,35.0,18.0,140.0,120.0,Hypertension,Delhi,30-45,Underweight,Stage 1 Hypertension,Prediabetic
+2042,Divya,65.0,22.0,130.0,180.0,Heart Risk,Delhi,60+,Normal,Elevated,Diabetic
+2044,Varun,65.0,18.0,110.0,80.0,Asthma,Delhi,60+,Underweight,Normal,Normal
+2045,Rahul,25.0,18.0,300.0,80.0,Diabetes,Bangalore,18-30,Underweight,Stage 2 Hypertension,Normal
+2046,Vikas,25.0,40.0,110.0,80.0,Heart Risk,Mumbai,18-30,Obese,Normal,Normal
+2047,Karan,65.0,40.0,,100.0,Heart Risk,Delhi,60+,Obese,Stage 2 Hypertension,Prediabetic
+2049,Manish,50.0,25.0,150.0,80.0,Diabetes,Mumbai,45-60,Overweight,Stage 1 Hypertension,Normal
+2050,Karan,30.0,40.0,300.0,,Hypertension,Bangalore,18-30,Obese,Stage 2 Hypertension,Diabetic
+2051,Rohit,40.0,,160.0,160.0,Heart Risk,Bangalore,30-45,Obese,Stage 2 Hypertension,Diabetic
+2052,Ankit,55.0,35.0,160.0,80.0,Normal,Pune,45-60,Obese,Stage 2 Hypertension,Normal
+2053,Anjali,25.0,35.0,300.0,80.0,Heart Risk,Mumbai,18-30,Obese,Stage 2 Hypertension,Normal
+2055,Sneha,35.0,30.0,140.0,130.0,Asthma,Chennai,30-45,Obese,Stage 1 Hypertension,Diabetic
+2056,Amit,30.0,25.0,110.0,130.0,Heart Risk,Bangalore,18-30,Overweight,Normal,Diabetic
+2057,Rahul,50.0,40.0,150.0,130.0,Normal,Jaipur,45-60,Obese,Stage 1 Hypertension,Diabetic
+2059,Anjali,35.0,18.0,140.0,130.0,Hypertension,Pune,30-45,Underweight,Stage 1 Hypertension,Diabetic
+2060,Komal,50.0,,150.0,180.0,Heart Risk,Delhi,45-60,Obese,Stage 1 Hypertension,Diabetic
+2061,Sneha,65.0,25.0,300.0,130.0,Normal,Pune,60+,Overweight,Stage 2 Hypertension,Diabetic
+2062,Rahul,30.0,35.0,160.0,140.0,Normal,Delhi,18-30,Obese,Stage 2 Hypertension,Diabetic
+2063,Sneha,25.0,22.0,160.0,90.0,Hypertension,Delhi,18-30,Normal,Stage 2 Hypertension,Normal
+2064,Anjali,30.0,,160.0,90.0,Diabetes,Delhi,18-30,Obese,Stage 2 Hypertension,Normal
+2066,Manish,30.0,22.0,150.0,140.0,Normal,Delhi,18-30,Normal,Stage 1 Hypertension,Diabetic
+2069,Priya,60.0,40.0,130.0,180.0,Asthma,Mumbai,45-60,Obese,Elevated,Diabetic
+2070,Arjun,65.0,22.0,160.0,140.0,Asthma,Jaipur,60+,Normal,Stage 2 Hypertension,Diabetic
+2071,Varun,30.0,25.0,120.0,130.0,Asthma,Mumbai,18-30,Overweight,Elevated,Diabetic
+2073,Karan,40.0,30.0,300.0,140.0,Hypertension,Chennai,30-45,Obese,Stage 2 Hypertension,Diabetic
+2075,Neha,25.0,22.0,140.0,130.0,Diabetes,Mumbai,18-30,Normal,Stage 1 Hypertension,Diabetic
+2076,Priya,35.0,,110.0,160.0,Diabetes,Delhi,30-45,Obese,Normal,Diabetic
+2077,Meera,45.0,40.0,300.0,140.0,Heart Risk,Mumbai,30-45,Obese,Stage 2 Hypertension,Diabetic
+2079,Riya,40.0,28.0,,160.0,Heart Risk,Chennai,30-45,Overweight,Stage 2 Hypertension,Diabetic
+2080,Varun,25.0,25.0,110.0,90.0,Diabetes,Mumbai,18-30,Overweight,Normal,Normal
+2081,Varun,40.0,28.0,120.0,100.0,Heart Risk,Chennai,30-45,Overweight,Elevated,Prediabetic
+2082,Priya,45.0,28.0,160.0,130.0,Heart Risk,Bangalore,30-45,Overweight,Stage 2 Hypertension,Diabetic
+2083,Varun,55.0,25.0,150.0,180.0,Hypertension,Chennai,45-60,Overweight,Stage 1 Hypertension,Diabetic
+2084,Komal,35.0,25.0,160.0,90.0,Diabetes,Delhi,30-45,Overweight,Stage 2 Hypertension,Normal
+2085,Riya,35.0,35.0,300.0,120.0,Hypertension,Delhi,30-45,Obese,Stage 2 Hypertension,Prediabetic

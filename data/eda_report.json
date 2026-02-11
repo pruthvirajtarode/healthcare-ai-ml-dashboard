@@ -1,0 +1,200 @@
+{
+  "basic_statistics": {
+    "dataset_info": {
+      "total_records": 68,
+      "total_features": 8,
+      "feature_names": [
+        "Patient_ID",
+        "Name",
+        "Age",
+        "BMI",
+        "Blood_Pressure",
+        "Glucose",
+        "Disease_Risk",
+        "City"
+      ]
+    },
+    "data_types": {
+      "Patient_ID": "int64",
+      "Name": "str",
+      "Age": "float64",
+      "BMI": "float64",
+      "Blood_Pressure": "float64",
+      "Glucose": "float64",
+      "Disease_Risk": "str",
+      "City": "str"
+    },
+    "describe_stats": {
+      "Patient_ID": {
+        "count": 68.0,
+        "mean": 2043.12,
+        "std": 25.15,
+        "min": 2001.0,
+        "25%": 2020.5,
+        "50%": 2044.5,
+        "75%": 2063.25,
+        "max": 2085.0
+      },
+      "Age": {
+        "count": 68.0,
+        "mean": 42.65,
+        "std": 13.14,
+        "min": 25.0,
+        "25%": 30.0,
+        "50%": 40.0,
+        "75%": 51.25,
+        "max": 65.0
+      },
+      "BMI": {
+        "count": 58.0,
+        "mean": 27.03,
+        "std": 6.54,
+        "min": 18.0,
+        "25%": 22.0,
+        "50%": 25.0,
+        "75%": 30.0,
+        "max": 40.0
+      },
+      "Blood_Pressure": {
+        "count": 60.0,
+        "mean": 166.5,
+        "std": 66.02,
+        "min": 110.0,
+        "25%": 120.0,
+        "50%": 150.0,
+        "75%": 160.0,
+        "max": 300.0
+      },
+      "Glucose": {
+        "count": 63.0,
+        "mean": 128.73,
+        "std": 33.0,
+        "min": 80.0,
+        "25%": 100.0,
+        "50%": 130.0,
+        "75%": 160.0,
+        "max": 180.0
+      }
+    }
+  },
+  "age_analysis": {
+    "mean_age": 42.64705882352941,
+    "median_age": 40.0,
+    "std_age": 13.143030280407636,
+    "min_age": 25.0,
+    "max_age": 65.0,
+    "age_groups": {
+      "0-18": 0,
+      "18-30": 19,
+      "30-45": 24,
+      "45-60": 17,
+      "60+": 8
+    }
+  },
+  "bmi_analysis": {
+    "mean_bmi": 27.03448275862069,
+    "median_bmi": 25.0,
+    "std_bmi": 6.54261473896366,
+    "min_bmi": 18.0,
+    "max_bmi": 40.0,
+    "bmi_categories": {
+      "Obese": 28,
+      "Overweight": 21,
+      "Normal": 12,
+      "Underweight": 7
+    }
+  },
+  "bp_analysis": {
+    "mean_bp": 166.5,
+    "median_bp": 150.0,
+    "std_bp": 66.0206695933881,
+    "min_bp": 110.0,
+    "max_bp": 300.0,
+    "bp_categories": {
+      "Stage 2 Hypertension": 30,
+      "Stage 1 Hypertension": 16,
+      "Elevated": 12,
+      "Normal": 10
+    }
+  },
+  "glucose_analysis": {
+    "mean_glucose": 128.73015873015873,
+    "median_glucose": 130.0,
+    "std_glucose": 32.99521292219298,
+    "min_glucose": 80.0,
+    "max_glucose": 180.0,
+    "glucose_categories": {
+      "Diabetic": 43,
+      "Normal": 14,
+      "Prediabetic": 11
+    }
+  },
+  "disease_risk_analysis": {
+    "disease_distribution": {
+      "Heart Risk": 20,
+      "Diabetes": 16,
+      "Hypertension": 12,
+      "Asthma": 10,
+      "Normal": 10
+    },
+    "disease_percentage": {
+      "Heart Risk": 29.41,
+      "Diabetes": 23.53,
+      "Hypertension": 17.65,
+      "Asthma": 14.71,
+      "Normal": 14.71
+    },
+    "high_risk_count": 20
+  },
+  "geographical_analysis": {
+    "city_distribution": {
+      "Delhi": 16,
+      "Chennai": 11,
+      "Pune": 11,
+      "Mumbai": 11,
+      "Bangalore": 10,
+      "Jaipur": 9
+    },
+    "total_cities": 6
+  },
+  "correlation_analysis": {
+    "Age": {
+      "Age": 1.0,
+      "BMI": -0.029,
+      "Blood_Pressure": -0.068,
+      "Glucose": 0.12
+    },
+    "BMI": {
+      "Age": -0.029,
+      "BMI": 1.0,
+      "Blood_Pressure": 0.121,
+      "Glucose": 0.039
+    },
+    "Blood_Pressure": {
+      "Age": -0.068,
+      "BMI": 0.121,
+      "Blood_Pressure": 1.0,
+      "Glucose": -0.059
+    },
+    "Glucose": {
+      "Age": 0.12,
+      "BMI": 0.039,
+      "Blood_Pressure": -0.059,
+      "Glucose": 1.0
+    }
+  },
+  "high_risk_analysis": {
+    "total_high_risk_patients": 65,
+    "percentage_high_risk": 95.59,
+    "high_risk_by_disease": {
+      "Heart Risk": 20,
+      "Diabetes": 16,
+      "Hypertension": 12,
+      "Asthma": 9,
+      "Normal": 8
+    },
+    "average_age": 42.77,
+    "average_bmi": 27.38,
+    "average_glucose": 129.84
+  }
+}
