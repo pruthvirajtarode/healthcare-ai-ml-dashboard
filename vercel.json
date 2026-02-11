@@ -1,18 +1,7 @@
 {
   "version": 2,
-  "name": "healthcare-ai-ml-dashboard",
   "cleanUrls": true,
   "trailingSlash": false,
-  "rewrites": [
-    {
-      "source": "/",
-      "destination": "/frontend/index.html"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/frontend/$1"
-    }
-  ],
   "headers": [
     {
       "source": "/(.*)",
